@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MemoAppApp: App {
+struct MemoApp: App {
     let store = MemoStore()
     
     var body: some Scene {

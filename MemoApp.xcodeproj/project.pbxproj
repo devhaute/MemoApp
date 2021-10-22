@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		B41953C62722B30B005716B4 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41953C52722B30B005716B4 /* Memo.swift */; };
 		B422BBB62722D0E700C6C9D3 /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422BBB52722D0E700C6C9D3 /* DateFormatter+Memo.swift */; };
-		B4687C762722AB720083E519 /* MemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4687C752722AB720083E519 /* MemoAppApp.swift */; };
+		B422BBB82722D57400C6C9D3 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422BBB72722D57400C6C9D3 /* MemoCell.swift */; };
+		B4687C762722AB720083E519 /* MemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4687C752722AB720083E519 /* MemoApp.swift */; };
 		B4687C782722AB720083E519 /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4687C772722AB720083E519 /* MemoListScene.swift */; };
 		B4687C7A2722AB730083E519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4687C792722AB730083E519 /* Assets.xcassets */; };
 		B4687C7D2722AB730083E519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4687C7C2722AB730083E519 /* Preview Assets.xcassets */; };
@@ -20,8 +21,9 @@
 /* Begin PBXFileReference section */
 		B41953C52722B30B005716B4 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		B422BBB52722D0E700C6C9D3 /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
+		B422BBB72722D57400C6C9D3 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		B4687C722722AB720083E519 /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4687C752722AB720083E519 /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
+		B4687C752722AB720083E519 /* MemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoApp.swift; sourceTree = "<group>"; };
 		B4687C772722AB720083E519 /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
 		B4687C792722AB730083E519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4687C7C2722AB730083E519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		B422BBB92722D63A00C6C9D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B422BBB72722D57400C6C9D3 /* MemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B4687C692722AB720083E519 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +88,8 @@
 			children = (
 				B422BBB42722D0C000C6C9D3 /* Extension */,
 				B41953C42722B2E0005716B4 /* Model */,
-				B4687C752722AB720083E519 /* MemoAppApp.swift */,
+				B422BBB92722D63A00C6C9D3 /* View */,
+				B4687C752722AB720083E519 /* MemoApp.swift */,
 				B4687C772722AB720083E519 /* MemoListScene.swift */,
 				B4687C792722AB730083E519 /* Assets.xcassets */,
 				B4687C802722AB730083E519 /* MemoApp.xcdatamodeld */,
@@ -165,9 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B422BBB82722D57400C6C9D3 /* MemoCell.swift in Sources */,
 				B422BBB62722D0E700C6C9D3 /* DateFormatter+Memo.swift in Sources */,
 				B4687C782722AB720083E519 /* MemoListScene.swift in Sources */,
-				B4687C762722AB720083E519 /* MemoAppApp.swift in Sources */,
+				B4687C762722AB720083E519 /* MemoApp.swift in Sources */,
 				B4687C822722AB730083E519 /* MemoApp.xcdatamodeld in Sources */,
 				B4C3E73C2722B48800F29664 /* MemoStore.swift in Sources */,
 				B41953C62722B30B005716B4 /* Memo.swift in Sources */,
