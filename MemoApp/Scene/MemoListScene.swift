@@ -31,7 +31,9 @@ struct MemoListScene: View {
 
 struct MemoListScene_Previews: PreviewProvider {
     static var previews: some View {
-        MemoListScene()
-            .environmentObject(MemoStore())
+        Group {
+            MemoListScene()
+                .environmentObject(MemoStore())
+        }
     }
 }

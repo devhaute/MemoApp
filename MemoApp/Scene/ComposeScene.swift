@@ -9,6 +9,7 @@ struct ComposeScene: View {
         NavigationView {
             VStack {
                 TextField("placeholder", text: $content)
+                Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle("새 메모")
@@ -24,6 +25,7 @@ struct ComposeScene: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
+                        store.insert(memo: content)
                         showComposer.toggle()
                     } label: {
                         Text("저장")
@@ -31,5 +33,11 @@ struct ComposeScene: View {
                 }
             }
         }
+    }
+}
+
+struct ComposeScene_Preview: PreviewProvider {
+    static var previews: some View {
+        ComposeScene(showComposer: .constant(false))
     }
 }
