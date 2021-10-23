@@ -3,6 +3,7 @@ import SwiftUI
 struct ComposeScene: View {
     @EnvironmentObject var store: MemoStore
     @State private var content: String = ""
+    @Binding var showComposer: Bool
     
     var body: some View {
         NavigationView {
@@ -15,7 +16,7 @@ struct ComposeScene: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
-                        print("취소 클릭")
+                        showComposer.toggle()
                     } label: {
                         Text("취소")
                     }
@@ -23,19 +24,12 @@ struct ComposeScene: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        print("저장 클릭")
+                        showComposer.toggle()
                     } label: {
                         Text("저장")
                     }
                 }
             }
         }
-    }
-}
-
-struct ComposeScene_Previews: PreviewProvider {
-    static var previews: some View {
-        ComposeScene()
-            .environmentObject(MemoStore())
     }
 }

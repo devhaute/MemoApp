@@ -10,7 +10,3 @@ extension DateFormatter {
         return format
     }
 }
-
-extension DateFormatter: ObservableObject {
-
-}

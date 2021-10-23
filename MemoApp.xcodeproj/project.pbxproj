@@ -88,9 +88,9 @@
 		B4687C742722AB720083E519 /* MemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				B4FD91802723DFDE00964792 /* Scene */,
 				B422BBB42722D0C000C6C9D3 /* Extension */,
 				B41953C42722B2E0005716B4 /* Model */,
+				B4FD91802723DFDE00964792 /* Scene */,
 				B4687C752722AB720083E519 /* MemoApp.swift */,
 				B4687C792722AB730083E519 /* Assets.xcassets */,
 				B4687C802722AB730083E519 /* MemoApp.xcdatamodeld */,

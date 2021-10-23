@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MemoCell: View {
-    @EnvironmentObject var formatter: DateFormatter
     
     let memo: Memo
     
@@ -18,7 +17,7 @@ struct MemoCell: View {
                 .font(.body)
                 .lineLimit(1)
             
-            Text(memo.insertDate, formatter: formatter)
+            Text(memo.insertDate, formatter: DateFormatter.memoDateFormatter)
                 .font(.caption)
                 .foregroundColor(.secondary)
         }
@@ -28,6 +27,5 @@ struct MemoCell: View {
 struct MemoCell_Preview: PreviewProvider {
     static var previews: some View {
         MemoCell(memo: Memo(content: "메모메모"))
-            .environmentObject(DateFormatter.memoDateFormatter)
     }
 }
