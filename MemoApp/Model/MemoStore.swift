@@ -24,7 +24,6 @@ class MemoStore: ObservableObject {
         self.list.removeAll { $0 == memo }
     }
     
-    // overLoading
     func delete(set: IndexSet) {
         for index in set {
             self.list.remove(at: index)
