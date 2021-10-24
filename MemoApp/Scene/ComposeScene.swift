@@ -8,8 +8,9 @@ struct ComposeScene: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("placeholder", text: $content)
-                Spacer()
+                TextView(text: $content)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.red)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle("새 메모")
