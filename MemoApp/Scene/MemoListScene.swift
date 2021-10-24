@@ -24,6 +24,7 @@ struct MemoListScene: View {
             }
             .sheet(isPresented: $showComposer) {
                 ComposeScene(showComposer: $showComposer)
+                    .environmentObject(KeyboardObserver())
             }
         }
     }
