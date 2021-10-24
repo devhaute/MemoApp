@@ -18,6 +18,7 @@
 		B4C3E73C2722B48800F29664 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3E73B2722B48800F29664 /* MemoStore.swift */; };
 		B4F0B5A427256FD200CEBEEC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B5A327256FD200CEBEEC /* TextView.swift */; };
 		B4F0B5A72725723200CEBEEC /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B5A62725723200CEBEEC /* KeyboardObserver.swift */; };
+		B4F0B5A9272580E900CEBEEC /* DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B5A8272580E900CEBEEC /* DetailScene.swift */; };
 		B4FD91822723E06000964792 /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD91812723E06000964792 /* ComposeScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		B4C3E73B2722B48800F29664 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		B4F0B5A327256FD200CEBEEC /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		B4F0B5A62725723200CEBEEC /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		B4F0B5A8272580E900CEBEEC /* DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScene.swift; sourceTree = "<group>"; };
 		B4FD91812723E06000964792 /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				B422BBB92722D63A00C6C9D3 /* View */,
 				B4687C772722AB720083E519 /* MemoListScene.swift */,
 				B4FD91812723E06000964792 /* ComposeScene.swift */,
+				B4F0B5A8272580E900CEBEEC /* DetailScene.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				B4F0B5A427256FD200CEBEEC /* TextView.swift in Sources */,
 				B4C3E73C2722B48800F29664 /* MemoStore.swift in Sources */,
 				B41953C62722B30B005716B4 /* Memo.swift in Sources */,
+				B4F0B5A9272580E900CEBEEC /* DetailScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

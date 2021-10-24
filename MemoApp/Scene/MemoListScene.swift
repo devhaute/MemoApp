@@ -9,7 +9,12 @@ struct MemoListScene: View {
         NavigationView {
             List {
                 ForEach(store.list) { memo in
-                    MemoCell(memo: memo)
+                    NavigationLink {
+                        DetailScene(memo: memo)
+                    } label: {
+                        MemoCell(memo: memo)
+                    }
+
                 }
             }
             .navigationTitle("내 메모")

@@ -43,5 +43,6 @@ struct ComposeScene: View {
 struct ComposeScene_Preview: PreviewProvider {
     static var previews: some View {
         ComposeScene(showComposer: .constant(false))
+            .environmentObject(KeyboardObserver())
     }
 }
